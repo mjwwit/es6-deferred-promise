@@ -2,6 +2,11 @@
 A deferred promise implementation on top of Promises/A+ spec.
 TypeScript definition file included.
 
+## Installation
+```sh
+npm install --save es6-deferred-promise
+```
+
 ## Usage
 In ES2015 JavaScript:
 ```javascript
@@ -32,4 +37,10 @@ deferred.promise
   });
 
 deferred.resolve('success');
+```
+
+## Testing
+```sh
+npm install
+npm test
 ```

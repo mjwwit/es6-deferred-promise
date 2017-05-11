@@ -1,6 +1,6 @@
 {
   "name": "es6-deferred-promise",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A deferred promise implementation on top of Promises/A+ spec.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
