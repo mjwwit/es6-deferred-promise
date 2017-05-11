@@ -1,0 +1,8 @@
+.editorconfig
+.gitignore
+.npmignore
+*.log
+tsconfig.json
+tsconfig.test.json
+tslint.json
+wallaby.js

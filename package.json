@@ -1,0 +1,49 @@
+{
+  "name": "es6-deferred-promise",
+  "version": "1.0.0",
+  "description": "A deferred promise implementation on top of Promises/A+ spec.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint ./*.ts",
+    "prebuild": "npm run lint",
+    "build": "tsc -p tsconfig.json",
+    "prebuild:test": "npm run lint",
+    "build:test": "tsc -p tsconfig.test.json",
+    "pretest": "npm run build:test",
+    "test": "mocha ./.tmp/*.spec.js",
+    "posttest": "rm -rf ./.tmp",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "promise",
+    "deferred",
+    "native",
+    "es6",
+    "es2015",
+    "a+",
+    "aplus",
+    "defer"
+  ],
+  "author": "Michael de Wit <mjwwit@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mjwwit/es6-deferred-promise.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "@types/sinon": "^2.2.1",
+    "@types/sinon-chai": "^2.7.27",
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.10.0",
+    "tslint": "^5.2.0",
+    "typescript": "^2.3.2"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
